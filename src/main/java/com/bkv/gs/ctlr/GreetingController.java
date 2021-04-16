@@ -14,9 +14,11 @@ public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
     private static final Logger LOG = LoggerFactory.getLogger(GreetingController.class);
+
     @GetMapping("/gs")
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         long i = counter.incrementAndGet();
+
 
         LOG.info("Request Count: "+i);
         LOG.info(" name: "+i);
