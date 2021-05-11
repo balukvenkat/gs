@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 public class GreetingController {
-    private static final String template = "Hello, %s!";
+    private static final String template = "Hi, %s!";
     private final AtomicLong counter = new AtomicLong();
     private static final Logger LOG = LoggerFactory.getLogger(GreetingController.class);
 
